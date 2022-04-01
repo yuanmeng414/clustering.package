@@ -1,0 +1,22 @@
+Package: clustering.package
+Title: The Package  use in context of clustering analysis and simulations.
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Yuan",
+           family = "Meng",
+           role = c("aut", "cre"),
+           email = "first.last@example.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports: 
+    dplyr,
+    magrittr,
+    modelr,
+    tidyr
+Depends: 
+    R (>= 2.10)
