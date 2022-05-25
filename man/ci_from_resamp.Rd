@@ -25,6 +25,10 @@ variance ratio. This returns confidence intervals for those values based on
 the resampling results.
 }
 \examples{
-
+boot_analysis = real_dfs \%>\%
+filter(severe == FALSE) \%>\%
+nest(-name) \%>\%
+mutate(boot = map(data, boot_dist, n_boot = 1000)) \%>\%
+select(-data)
 ci_from_resamp(boot_analysis[[2]][[2]], method = "quant", 1)
 }

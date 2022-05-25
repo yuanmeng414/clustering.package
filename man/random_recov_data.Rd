@@ -23,6 +23,11 @@ intended to mimic the random recovery process implemented in various papers.
 This function is used in the context of clustering analysis and simulations.
 }
 \examples{
-
+winters_df = real_dfs \%>\%
+filter(name == "Winters", x != 66) \%>\%
+mutate(
+ii = 66 - x,
+delta = y  - x,
+prop = delta / (66 - x))
 random_recov_data(1, winters_df)
 }

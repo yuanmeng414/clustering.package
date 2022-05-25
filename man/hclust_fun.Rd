@@ -23,6 +23,11 @@ others. Clustering is performed on all variables in the input dataframe;
 often specific variables are chosen at the outset (e.g. x and y).
 }
 \examples{
-
+winters_df = real_dfs \%>\%
+filter(name == "Winters", x != 66) \%>\%
+mutate(
+ii = 66 - x,
+delta = y  - x,
+prop = delta / (66 - x))
 hclust_fun(winters_df \%>\% select(x, y), 2)
 }

@@ -20,3 +20,5 @@ Imports:
     tidyr
 Depends: 
     R (>= 2.10)
+URL: https://github.com/yuanmeng414/clustering.package
+BugReports: https://github.com/yuanmeng414/clustering.package/issues
